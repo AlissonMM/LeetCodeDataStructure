@@ -3,13 +3,13 @@
 public class Main {
     public static void main(String[] args) {
 
-//            GrayCode grayCode = new GrayCode();
+        CombinationSum combinationSum = new CombinationSum();
 
-//        System.out.println(grayCode.grayCode(1));
+        int[] candidates = {2,3,6,7};
+        int target = 7;
 
-        CountAndSay countAndSay = new CountAndSay();
 
-        System.out.println(countAndSay.countAndSay(4));
+        System.out.println(combinationSum.combinationSum(candidates, target));
 
         }
     }
