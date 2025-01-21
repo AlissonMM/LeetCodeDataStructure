@@ -3,13 +3,23 @@
 public class Main {
     public static void main(String[] args) {
 
-        CombinationSum combinationSum = new CombinationSum();
+//        CombinationSum combinationSum = new CombinationSum();
+//
+//        int[] candidates = {2,3,6,7};
+//        int target = 7;
+//
+//
+//        System.out.println(combinationSum.combinationSum(candidates, target));
 
-        int[] candidates = {2,3,6,7};
-        int target = 7;
+        RemoveElement removeElement = new RemoveElement();
 
+        int[] var = {0,1,2,2,3,0,4,2};
 
-        System.out.println(combinationSum.combinationSum(candidates, target));
+        int[] result = removeElement.removeElement(var, 2);
+
+        for (int i = 0; i< result.length;i++){
+            System.out.println(result[i]);
+        }
 
         }
     }
