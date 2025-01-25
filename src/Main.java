@@ -21,11 +21,19 @@ public class Main {
 //            System.out.println(result[i]);
 //        }
 
-        SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
+//        SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
+//
+//        int[] nums = {1,3,6,8,9};
+//
+//        System.out.println(searchInsertPosition.searchInsert(nums, 10787));
 
-        int[] nums = {1,3,6,8,9};
+        TwoSum twoSum = new TwoSum();
 
-        System.out.println(searchInsertPosition.searchInsert(nums, 10787));
+        int[] nums = {3,2,4};
+
+
+
+        twoSum.twoSum(nums, 6);
 
         }
     }
