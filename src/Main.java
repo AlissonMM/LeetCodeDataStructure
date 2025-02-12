@@ -41,11 +41,18 @@ public class Main {
 //
 //        System.out.println(missingNumber.missingNumber(nums));
 
-        SmallerNumbersThanCurrent smallerNumbersThanCurrent = new SmallerNumbersThanCurrent();
+//        SmallerNumbersThanCurrent smallerNumbersThanCurrent = new SmallerNumbersThanCurrent();
+//
+//        int[] nums = {8,1,2,2,3};
+//
+//        smallerNumbersThanCurrent.smallerNumbersThanCurrent(nums);
 
-        int[] nums = {8,1,2,2,3};
+        MinimunTimePoints minimunTimePoints  = new MinimunTimePoints();
 
-        smallerNumbersThanCurrent.smallerNumbersThanCurrent(nums);
+        int[][] points = {{1,1},{3,4},{-1,0}};
+
+        minimunTimePoints.minTimeToVisitAllPoints(points);
+
 
         }
     }
