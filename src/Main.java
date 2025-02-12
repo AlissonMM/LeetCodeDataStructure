@@ -27,13 +27,25 @@ public class Main {
 //
 //        System.out.println(searchInsertPosition.searchInsert(nums, 10787));
 
-        TwoSum twoSum = new TwoSum();
+//        TwoSum twoSum = new TwoSum();
+//
+//        int[] nums = {5, 10, 20};
+//
+//
+//
+//        twoSum.twoSum(nums, 15);
 
-        int[] nums = {3,2,4};
+//        MissingNumber missingNumber = new MissingNumber();
+//
+//        int[] nums = {1,2,3,5,0};
+//
+//        System.out.println(missingNumber.missingNumber(nums));
 
+        SmallerNumbersThanCurrent smallerNumbersThanCurrent = new SmallerNumbersThanCurrent();
 
+        int[] nums = {8,1,2,2,3};
 
-        twoSum.twoSum(nums, 6);
+        smallerNumbersThanCurrent.smallerNumbersThanCurrent(nums);
 
         }
     }
