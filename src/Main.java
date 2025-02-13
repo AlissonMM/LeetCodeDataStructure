@@ -47,11 +47,23 @@ public class Main {
 //
 //        smallerNumbersThanCurrent.smallerNumbersThanCurrent(nums);
 
-        MinimunTimePoints minimunTimePoints  = new MinimunTimePoints();
+//        MinimunTimePoints minimunTimePoints  = new MinimunTimePoints();
+//
+//        int[][] points = {{1,1},{2,3}};
+//
+//        minimunTimePoints.minTimeToVisitAllPoints(points);
 
-        int[][] points = {{1,1},{3,4},{-1,0}};
+//        ThreeSum threeSum = new ThreeSum();
+//
+//        int[] nums = {-1,0,1,2,-1,-4};
+//
+//        threeSum.threeSum(nums);
 
-        minimunTimePoints.minTimeToVisitAllPoints(points);
+        LongestMountain longestMountain = new LongestMountain();
+
+        int[] nums = {2,1,4,7,3,2,5};
+
+        longestMountain.longestMountain(nums);
 
 
         }
