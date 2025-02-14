@@ -1,43 +1,38 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LongestMountain {
     public int longestMountain(int[] arr) {
-        int i = 0;
-        int maxLength = 0; // Armazenará o tamanho da maior montanha
-        List<Integer> actualMountain = new ArrayList<>();
+        if (arr.length < 3) return 0;
 
-        // Verifica se o array tem pelo menos 3 elementos para formar uma montanha
-        if (arr.length >= 3) {
-            for (int j = 1; j < arr.length - 1; j++) { // Começa do segundo elemento e vai até o penúltimo
+        int maxLength = 0;
 
-                // Verifica se o elemento j é o pico da montanha (maior que os vizinhos)
-                if (arr[j] > arr[j - 1] && arr[j] > arr[j + 1]) {
-                    actualMountain.clear(); // Limpa a lista a cada novo pico
-                    actualMountain.add(arr[j - 1]); // Adiciona o valor à esquerda
-                    actualMountain.add(arr[j]);     // Adiciona o pico
-                    actualMountain.add(arr[j + 1]); // Adiciona o valor à direita
+        for (int i = 1; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
 
-                    int left = j - 2; // Expande para a esquerda
-                    while (left >= 0 && arr[left] < arr[left + 1]) {
-                        actualMountain.add(0, arr[left]); // Adiciona à esquerda
-                        left--;
-                    }
+                int left = i - 1;
+                int right = i + 1;
 
-                    int right = j + 2; // Expande para a direita
-                    while (right < arr.length && arr[right] < arr[right - 1]) {
-                        actualMountain.add(arr[right]); // Adiciona à direita
-                        right++;
-                    }
 
-                    // Verifica se a montanha tem pelo menos 3 elementos
-                    if (actualMountain.size() >= 3) {
-                        maxLength = Math.max(maxLength, actualMountain.size());
-                    }
+                while (left > 0 && arr[left] > arr[left - 1]) {
+                    left--;
                 }
+
+
+                while (right < arr.length - 1 && arr[right] > arr[right + 1]) {
+                    right++;
+                }
+
+
+                int mountainSize = right - left + 1;
+
+
+                maxLength = Math.max(maxLength, mountainSize);
             }
         }
-        System.out.println(actualMountain);
+
+        System.out.println(maxLength);
 
         return maxLength;
     }
