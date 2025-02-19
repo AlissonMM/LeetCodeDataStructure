@@ -59,12 +59,23 @@ public class Main {
 //
 //        threeSum.threeSum(nums);
 
-        LongestMountain longestMountain = new LongestMountain();
+//        LongestMountain longestMountain = new LongestMountain();
+//
+//        int[] nums = {2,1,4,7,3,2,5};
+//
+//        longestMountain.longestMountain(nums);
 
-        int[] nums = {2,1,4,7,3,2,5};
+//        ContainsDuplicateII containsDuplicateII = new ContainsDuplicateII();
+//
+//        int[] nums = {1,0,1,1};
+//
+//        System.out.println(containsDuplicateII.containsNearbyDuplicate(nums, 1));
 
-        longestMountain.longestMountain(nums);
+        MinimunAbsoluteDifference minimunAbsoluteDifference = new MinimunAbsoluteDifference();
 
+        int[]arr = {3,8,-10,23,19,-4,-14,27};
+
+        minimunAbsoluteDifference.minimumAbsDifference(arr);
 
         }
     }
