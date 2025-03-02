@@ -71,11 +71,22 @@ public class Main {
 //
 //        System.out.println(containsDuplicateII.containsNearbyDuplicate(nums, 1));
 
-        MinimunAbsoluteDifference minimunAbsoluteDifference = new MinimunAbsoluteDifference();
+//        MinimunAbsoluteDifference minimunAbsoluteDifference = new MinimunAbsoluteDifference();
+//
+//        int[]arr = {3,8,-10,23,19,-4,-14,27};
+//
+//        minimunAbsoluteDifference.minimumAbsDifference(arr);
 
-        int[]arr = {3,8,-10,23,19,-4,-14,27};
 
-        minimunAbsoluteDifference.minimumAbsDifference(arr);
+//        CoinChange coinChange = new CoinChange();
+//
+//        int[]coins = {1,2,5};
+//
+//        System.out.println(coinChange.coinChange(coins, 11));
+
+        ClimbingStairs climbingStairs = new ClimbingStairs();
+
+        System.out.println(climbingStairs.climbStairs(1));
 
         }
     }
