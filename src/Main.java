@@ -84,9 +84,15 @@ public class Main {
 //
 //        System.out.println(coinChange.coinChange(coins, 11));
 
-        ClimbingStairs climbingStairs = new ClimbingStairs();
+//        ClimbingStairs climbingStairs = new ClimbingStairs();
+//
+//        System.out.println(climbingStairs.climbStairs(1));
 
-        System.out.println(climbingStairs.climbStairs(1));
+        MaximumSubarray maximumSubarray = new MaximumSubarray();
+
+        int nums[] = {-2,1,-3,4,-1,2,1,-5,4};
+
+        System.out.println(maximumSubarray.maxSubArray(nums));
 
         }
     }
