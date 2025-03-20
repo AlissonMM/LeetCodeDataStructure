@@ -2,16 +2,20 @@ import java.util.Arrays;
 
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
-        int maxSum = nums[0];
-        int currentSum = 0;
+        int maxSum = 0;
 
-        for (int num : nums) {
-            if (currentSum < 0) {
-                currentSum = 0;
+
+        for (int i = 1; i < nums.length; i++) {
+            int sum = nums[i] + nums[i - 1];
+
+            if (sum > nums[i]){
+                nums[i] = sum;
             }
-            currentSum += num;
-            maxSum = Math.max(maxSum, currentSum);
         }
+
+        nums = Arrays.stream(nums).sorted().toArray();
+
+        maxSum = nums[nums.length -1];
 
         return maxSum;
     }
