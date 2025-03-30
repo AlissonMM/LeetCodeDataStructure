@@ -88,11 +88,17 @@ public class Main {
 //
 //        System.out.println(climbingStairs.climbStairs(1));
 
-        MaximumSubarray maximumSubarray = new MaximumSubarray();
+//        MaximumSubarray maximumSubarray = new MaximumSubarray();
+//
+//        int nums[] = {-2,1,-3,4,-1,2,1,-5,4};
+//
+//        System.out.println(maximumSubarray.maxSubArray(nums));
 
-        int nums[] = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] nums = {-2,0,3,-5,2,-1};
 
-        System.out.println(maximumSubarray.maxSubArray(nums));
+        RangeSumQuery rangeSumQuery = new RangeSumQuery(nums);
+
+        System.out.println(rangeSumQuery.sumRange(2,5));
 
         }
     }
